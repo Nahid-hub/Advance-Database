@@ -1,0 +1,132 @@
+body {
+    font-size: 19px;
+    background: linear-gradient(145deg, rgb(92, 197, 205), salmon);
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#search {
+    background: lightgoldenrodyellow;
+    width: 60%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid lightgoldenrodyellow;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+button {
+    width: 150px;
+    height: 50px;
+    background: lightgreen;
+    color: #000;
+    border-radius: 10px;
+}
+button:hover{
+    background: lightseagreen;
+}
+
+table {
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+tr {
+    border: 1px solid #cbcbcb;
+}
+
+th,
+td {
+    justify-content: center;
+    text-align: center;
+    border: none;
+    height: 30px;
+    padding: 2px;
+    border-right: 1px solid #cbcbcb;
+}
+
+tr:hover {
+    background: #F5F5F5;
+}
+
+form {
+    width: 45%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: #000;
+    background: rgb(26, 146, 197);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: lightgreen;
+}
+
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: lightgreen;
+    color: #000;
+    border-radius: 3px;
+}
+
+.edit_btn:hover {
+    color: #fff;
+    background: orange;
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: #000;
+    border-radius: 3px;
+    background: lightgreen;
+}
+
+.del_btn:hover {
+    color: #fff;
+    background: red;
+}
+
+.msg {
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: skyblue;
+    background: #dff0d8;
+    border: 1px solid skyblue;
+    width: 50%;
+    text-align: center;
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:rgb(0.0.0);
+}
+.container {
+    width: 380px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 30px 50px 30px;
+}
+.container header {
+    font-size: 35px;
+    font-weight: 600;
+}
+.container form {
+    margin: 40px 0;
+}
+.container a {
+    color: #4169E1;
+    text-decoration: none;
+}
+.container a:hover {
+    color: #00FA9A;
+    text-decoration: underline;
+}
+form .area {
+    margin-bottom: 20px;
+    width: 100%;
+}
+form .area.shake {
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+    0%, 100% {
+        margin-left: 0;
+    }
+    20%, 80% {
+        margin-left: -12px;
+    }
+    40%, 60% {
+        margin-left: 12px;
+    }
+}
+form .area .input-area {
+    position: relative;
+
+}
+form input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #bfbfbf;
+}
+form .area.error input {
+    border-color: #dc3545;
+}
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+}
+form .area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+form .area .icon {
+    left: 15px;
+    color: #bfbfbf;
+}
+form input[type="submit"] {
+    margin-top: 30px;
+    border: 3px solid #5372F0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    background: #5372F0;
+    transition: 0.3s ease;
+}
+form input[type="submit"]:hover {
+    background: #2c52ed;
+    color: #000;
+    border-radius: 10px;
+    border: 3px solid #2c52ed;
+}
+form .createacc-link {
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/*SHOW HIDE PASSWORD*/
+
+.input-area label, span.show {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+span.show {
+    right: 35px;
+    color: #bfbfbf;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;
+}
+input:valid ~ span.show {
+    visibility: visible;
+}
